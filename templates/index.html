@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Spam/Ham Detection</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+		<style>
+		h1 
+		{
+			color: #1000FF;
+			font-family: "Times New Roman", Times, serif;
+			font-size: 50px;
+			font-weight: bold;
+			margin-top: 0px;
+			margin-bottom: 1px;
+		}
+		.center 
+		{
+		  margin: auto;
+		  width: 60%;
+		  padding: 10px;
+		  text-align: center;
+		}
+		h3
+		{
+			color: #000000;
+			font-family: "Times New Roman", Times, serif;
+			font-size: 25px;
+			font-weight: bold;
+			margin-top: 0px;
+			margin-bottom: 1px;
+		}
+		</style>
+    </head>
+    <body bgcolor="#FF9D50">
+        <div class="center">
+			<br><br><br><br>
+			<h1 align="center">Spam/Ham Detection</h1>
+			<form action="{{url_for('predict')}}" method="post">
+			<br><br><br><br>
+			<h3>Type Here </h3>
+			<br><br>
+			<input type="text" class="w3-input" name="sentence">
+			<br><br>
+			<button type="submit" class="w3-btn w3-red">Predict</button>
+			</form>
+			<br>
+			<br>
+			<b>{{prediction_text}}</b>
+
+        </div>
+    </body>
+</html>
