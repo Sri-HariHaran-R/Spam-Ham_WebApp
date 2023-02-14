@@ -23,7 +23,7 @@ jupyter notebook or Pycharm
 
 ## 🚀 **Working of the project**
 
-The models used for this project are CountVectorizer and MultiNomialNB.These models are saved locally using pickle library.The saved models are used in backend(flask). Using flask, the data obtained from the web page is processed and the predicted result is sent to the web page.
+The models used for this project are CountVectorizer and MultiNomialNB.These models are saved locally using pickle library.The saved models are used in backend(flask). Using flask, the data obtained from the web page is processed using models and the predicted result is sent to the web page.
 
 ## 📷 **Screenshots**
 
